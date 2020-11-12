@@ -149,7 +149,7 @@ WSGI_APPLICATION = 'pocdjvue.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'C:\\Users\\yaisel\\Development\\PyCharm\\pocdjvue\\db.sqlite3',
+        'NAME': 'db.sqlite3',
     }
 }
 
