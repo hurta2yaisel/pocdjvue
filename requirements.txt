@@ -8,14 +8,13 @@ django-extra-views==0.11.0
 django-haystack==2.8.1
 django-oscar==2.0.4
 django-oscar-api==2.0.2
--e git+git@github.com:hurta2yaisel/django-oscar-api-vue-storefront.git@07714c5278e5a54ef3f8261597e60526050a5550#egg=django_oscar_api_vue_storefront
+#git+git@github.com:hurta2yaisel/django-oscar-api-vue-storefront.git@07714c5278e5a54ef3f8261597e60526050a5550#egg=django_oscar_api_vue_storefront
 django-phonenumber-field==2.0.1
 django-tables2==1.21.2
 django-treebeard==4.3.1
 django-widget-tweaks==1.4.8
 djangorestframework==3.12.1
-elasticsearch==7.9.1
-elasticsearch-dsl==7.3.0
+elasticsearch-dsl>=6.0.0,<7.0.0
 factory-boy==2.12.0
 Faker==4.14.0
 idna==2.10
