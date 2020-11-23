@@ -19,6 +19,14 @@ def elastic_result(self, request):
         r = requests.post(fullpath, json=requestdata)
 
     if request.method == "GET":
+        if not requestdata:
+            requestdata["query"] = {"match_all": {}}
+
+        from_ = request.query_params.get('from', 0)
+        size_ = request.query_params.get('size', 8)
+        requestdata['from'] = from_
+        requestdata['size'] = size_
+
         if requestdata:
             r = requests.get(fullpath, json=requestdata)
         else:
